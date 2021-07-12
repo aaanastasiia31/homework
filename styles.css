@@ -1,0 +1,98 @@
+.container {
+    background-color: pink;
+    width: 100%;
+    height: 80px;
+    padding: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container > div {
+    background-color: pink;
+    width: 160px;
+    height: 70px;
+    font-family:'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container:hover > div {
+    color: lightcoral;
+}
+
+.container-2 {
+    display: grid;
+    flex-direction: row;
+    grid-template-areas: 
+        "div-1 div-2 div-3";
+ grid-template-rows: 500px;
+    grid-template-columns: repeat(auto);
+    grid-gap: 16px;
+    height: 100vh;
+    margin: 0;
+}
+
+.container-2 div {
+    padding: 20px;
+}
+
+#div-1 {
+    background-color: green;
+}
+
+#div-2 {
+    background-color: blue;
+}
+
+#div-3 {
+    background-color: yellow;
+}
+
+#div-4 {
+    background-color: red;
+}
+
+#div-5 {
+    background-color: violet;
+}
+
+#div-6 {
+    background-color: grey;
+}
+
+
+.sansserif {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+
+}
+
+
+.sansserif_2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+
+}
+
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+
+}
+
+button:hover {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: lightcoral;
+
+}
+
+@media (max-width: 768px) {
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;  
+}
